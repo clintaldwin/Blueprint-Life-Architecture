@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sovereign Architect — Clint's Blueprint</title>
+<meta name="description" content="A personal life blueprint spanning seven phases, from Age 18 through the Sovereign Legacy — grounded in Scripture and Stoic philosophy.">
+<meta name="theme-color" content="#0A1930">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A1930'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23C9A227' stroke-width='1.6'/%3E%3Cpath d='M16 4v6M16 22v6M4 16h6M22 16h6' stroke='%23E8EEF6' stroke-width='1.4'/%3E%3Ccircle cx='16' cy='16' r='1.6' fill='%23C9A227'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to blueprint content</a>
+
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<!-- ============ SHEET INDEX RAIL ============ -->
+<button class="rail-toggle" id="railToggle" aria-expanded="false" aria-controls="railList">
+  <span class="rail-toggle__current" id="railCurrent">A0 · Cover</span>
+  <span class="rail-toggle__icon" aria-hidden="true">
+    <svg viewBox="0 0 20 20" width="18" height="18"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+  </span>
+</button>
+
+<nav class="rail" aria-label="Sheet index">
+  <div class="rail__brand">
+    <span class="rail__brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 4v6M16 22v6M4 16h6M22 16h6" stroke="currentColor" stroke-width="1.3"/><circle cx="16" cy="16" r="1.6" fill="currentColor"/></svg>
+    </span>
+    <span class="rail__brand-text">Sovereign<br>Architect</span>
+  </div>
+  <ol class="rail__list" id="railList">
+    <li><a class="rail__link" href="#sheet-a0" data-sheet="a0"><span class="rail__num">A0</span><span class="rail__name">Cover</span></a></li>
+    <li><a class="rail__link" href="#sheet-a1" data-sheet="a1"><span class="rail__num">A1</span><span class="rail__name">Foundations</span></a></li>
+    <li><a class="rail__link" href="#sheet-a2" data-sheet="a2"><span class="rail__num">A2</span><span class="rail__name">Origins</span></a></li>
+    <li><a class="rail__link" href="#sheet-a3" data-sheet="a3"><span class="rail__num">A3</span><span class="rail__name">Phase 1–2</span></a></li>
+    <li><a class="rail__link" href="#sheet-a4" data-sheet="a4"><span class="rail__num">A4</span><span class="rail__name">Phase 3</span></a></li>
+    <li><a class="rail__link" href="#sheet-a5" data-sheet="a5"><span class="rail__num">A5</span><span class="rail__name">Phase 4</span></a></li>
+    <li><a class="rail__link" href="#sheet-a6" data-sheet="a6"><span class="rail__num">A6</span><span class="rail__name">Phase 5</span></a></li>
+    <li><a class="rail__link" href="#sheet-a7" data-sheet="a7"><span class="rail__num">A7</span><span class="rail__name">Phase 6</span></a></li>
+    <li><a class="rail__link" href="#sheet-a8" data-sheet="a8"><span class="rail__num">A8</span><span class="rail__name">Phase 7</span></a></li>
+    <li><a class="rail__link" href="#sheet-a9" data-sheet="a9"><span class="rail__num">A9</span><span class="rail__name">Investing</span></a></li>
+    <li><a class="rail__link" href="#sheet-a10" data-sheet="a10"><span class="rail__num">A10</span><span class="rail__name">Risk Shield</span></a></li>
+    <li><a class="rail__link" href="#sheet-a11" data-sheet="a11"><span class="rail__num">A11</span><span class="rail__name">The Letter</span></a></li>
+    <li><a class="rail__link" href="#sheet-a12" data-sheet="a12"><span class="rail__num">A12</span><span class="rail__name">Appendix</span></a></li>
+  </ol>
+  <div class="rail__controls">
+    <button class="chrome-btn" id="readToggle" type="button" aria-pressed="false">
+      <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><circle cx="10" cy="10" r="7.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10 2.8a7.2 7.2 0 0 0 0 14.4Z" fill="currentColor"/></svg>
+      <span id="readToggleLabel">Read Mode</span>
+    </button>
+    <button class="chrome-btn" id="soundToggle" type="button" aria-pressed="false">
+      <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><path d="M3 8v4h3l4 3V5L6 8H3Z" fill="currentColor"/><path id="soundWaveIcon" d="M13 7a5 5 0 0 1 0 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      <span id="soundToggleLabel">Ambient Sound</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ SCROLL PROGRESS RULER ============ -->
+<div class="ruler" aria-hidden="true">
+  <div class="ruler__track">
+    <div class="ruler__fill" id="rulerFill"></div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ A0 — COVER ============ -->
+<section class="sheet sheet--cover" id="sheet-a0" data-sheet="a0" aria-labelledby="a0-title">
+  <div class="cover-frame" aria-hidden="true">
+    <svg class="cover-frame__svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <rect class="cover-frame__rect" x="2" y="2" width="96" height="96" fill="none" vector-effect="non-scaling-stroke"/>
+    </svg>
+  </div>
+
+  <p class="sheet__kicker">The Sovereign Architect · Sheet A0</p>
+
+  <svg class="cover-title-svg" viewBox="0 0 720 220" role="img" aria-labelledby="a0-title-desc">
+    <desc id="a0-title-desc">The Sovereign Architect — hand-drawn title lettering</desc>
+    <text x="2" y="90" class="cover-title-svg__line">THE SOVEREIGN</text>
+    <text x="2" y="170" class="cover-title-svg__line">ARCHITECT</text>
+  </svg>
+  <h1 class="visually-hidden" id="a0-title">The Sovereign Architect</h1>
+
+  <p class="cover-subtitle">A Blueprint for a Life Well-Built</p>
+  <p class="cover-byline"><em>A Letter to My Future Self</em> — written by Clint, for Clint</p>
+
+  <blockquote class="callout callout--epigraph reveal">
+    <p class="callout__verse">“For which of you, intending to build a tower, sitteth not down first, and counteth the cost, whether he have sufficient to finish it?”</p>
+    <cite class="callout__ref">Luke 14:28 (KJV)</cite>
+  </blockquote>
+
+  <div class="cover-meta reveal">
+    <p><span class="num">First written:</span> June–July 2026</p>
+    <p>One month before the first day of BSIT — <span class="num">Age 18</span></p>
+  </div>
+
+  <div class="cover-index reveal">
+    <h2 class="cover-index__title">How This Document Is Organized</h2>
+    <p>This is not a business plan for investors. It is a personal architecture — a record of how you thought, what you decided, why you decided it, and what you promised yourself before the noise of an actual life started drowning it out. Read it in order the first time. After that, jump straight to whichever Phase you're standing in.</p>
+    <dl class="cover-index__list">
+      <div class="cover-index__row"><dt>Part I — Foundations</dt><dd>the Scripture and the philosophy underneath everything else.</dd></div>
+      <div class="cover-index__row"><dt>Part II — Where This Began</dt><dd>the honest origin story, so you never forget who you were before.</dd></div>
+      <div class="cover-index__row"><dt>Part III — The Seven Phases</dt><dd>the actual plan — detailed, numbered, and corrected where it needed correcting.</dd></div>
+      <div class="cover-index__row"><dt>Part IV — Investing Wisdom</dt><dd>the difference between building and gambling.</dd></div>
+      <div class="cover-index__row"><dt>Part V — The Risk Shield</dt><dd>every honest way this could go wrong, and what you do about it.</dd></div>
+      <div class="cover-index__row"><dt>Part VI — The Letter</dt><dd>a message to you, at three different ages, from the version of you writing this today.</dd></div>
+      <div class="cover-index__row"><dt>Appendix</dt><dd>quick-reference numbers.</dd></div>
+    </dl>
+  </div>
+
+  <a class="cover-scroll-cue reveal" href="#sheet-a1">
+    <span>Begin at Sheet A1</span>
+    <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><path d="M10 3v13M4 11l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A0</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Cover</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">00</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+  </div>
+</section>
+
+<!-- ============ A1 — FOUNDATIONS ============ -->
+<section class="sheet" id="sheet-a1" data-sheet="a1" aria-labelledby="a1-title">
+  <p class="sheet__kicker reveal">Part I</p>
+  <h2 class="sheet__title reveal" id="a1-title">Foundations</h2>
+
+  <div class="sheet__content">
+    <h3 class="reveal">A Word Before You Begin</h3>
+    <p class="reveal">If you are reading this, some time has passed. Maybe you are 22 and holding a diploma. Maybe you are 27, stepping off a plane with a heavier bank account and a lighter heart. Maybe things went sideways and you are reading this at a kitchen table trying to remember why you started. All three of you are welcome here.</p>
+    <p class="reveal">This document exists because a conversation kept going somewhere real. What started as “what's the best programming language” became a full architecture for a life — tested, questioned, corrected, and rebuilt stronger for having been questioned. That correction matters. A plan that cannot survive being challenged was never a plan; it was a wish wearing a plan's clothes. This one was stress-tested, and it held.</p>
+    <p class="reveal">Use this document like this: read the whole thing once, now, while the fire is fresh. Then let it sit. Come back to it when you graduate, when you land in Saudi, when a business succeeds, when one fails, when you doubt yourself at 2 AM before an exam. It will not have all the answers — life will always be bigger than any blueprint — but it will remind you of your own reasoning, and reasoning you trusted once is worth listening to again.</p>
+
+    <h3 class="reveal">The Cornerstone — Why Scripture Grounds This</h3>
+    <p class="reveal">You said it yourself: faith is the foundation of this blueprint, not a decoration on top of it. So before a single peso is projected or a single phase is planned, here is the ground this whole structure is poured on.</p>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__eyebrow">On committing the plan</p>
+      <p class="callout__verse">“Commit thy works unto the LORD, and thy thoughts shall be established.”</p>
+      <cite class="callout__ref">Proverbs 16:3 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-commit">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-commit"><div class="callout__reflection-inner"><p>A proverb, not a promise of a specific outcome — wisdom literature speaks in general patterns, not guarantees. The principle stands: plans held loosely and offered honestly to God tend to outlast plans gripped in anxious self-reliance.</p></div></div>
+    </blockquote>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__eyebrow">On diligence over haste</p>
+      <p class="callout__verse">“The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want.”</p>
+      <cite class="callout__ref">Proverbs 21:5 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-diligence">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-diligence"><div class="callout__reflection-inner"><p>This is the verse this whole Blueprint tries to obey. Every correction you'll read in Part III — Japan to Saudi, the EIM-first entry scrapped for a legal one — happened because diligence was chosen over haste, even when haste felt faster.</p></div></div>
+    </blockquote>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__eyebrow">On counting the cost</p>
+      <p class="callout__verse">“For which of you, intending to build a tower, sitteth not down first, and counteth the cost...”</p>
+      <cite class="callout__ref">Luke 14:28 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-tower">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-tower"><div class="callout__reflection-inner"><p>In its original setting, Jesus is not teaching project management — He is warning that following Him costs everything, so no one should start that road without understanding its weight. The wisdom principle borrowed here (nothing is built well without first counting what it will cost you) is a legitimate echo of that passage, even though its deepest meaning points somewhere higher than a career plan.</p></div></div>
+    </blockquote>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__eyebrow">On work itself</p>
+      <p class="callout__verse">“And whatsoever ye do, do it heartily, as to the Lord, and not unto men.”</p>
+      <cite class="callout__ref">Colossians 3:23 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-work">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-work"><div class="callout__reflection-inner"><p>Paul first wrote this to bondservants — people with the least control over their own labor of anyone in that society. The church has rightly carried its principle forward to all work since: the merchandising shift, the sem-break EIM assessment, the entry-level Saudi job that feels beneath your degree — all of it done as an offering, not just a wage.</p></div></div>
+    </blockquote>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__eyebrow">On wealth built slowly</p>
+      <p class="callout__verse">“Wealth gotten by vanity shall be diminished: but he that gathereth by labour shall increase.”</p>
+      <cite class="callout__ref">Proverbs 13:11 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-wealth">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-wealth"><div class="callout__reflection-inner"><p>Keep this one close for Part IV. It is the entire crypto-trading-versus-investing conversation in one line, written three thousand years before either existed.</p></div></div>
+    </blockquote>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__eyebrow">On the seasons of a life</p>
+      <p class="callout__verse">“To every thing there is a season, and a time to every purpose under the heaven.”</p>
+      <cite class="callout__ref">Ecclesiastes 3:1 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-seasons">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-seasons"><div class="callout__reflection-inner"><p>A season for coding alone in a room. A season for wiring a building. A season for a chart of savings growth. A season, eventually, for rest. None of them is the whole of life — each is simply its own time.</p></div></div>
+    </blockquote>
+
+    <h3 class="reveal">Stoic Foundations — Wisdom for the Grind</h3>
+    <p class="reveal">Scripture is the ground. Stoic philosophy is scaffolding — useful, practical tools for the daily grind that Scripture doesn't spend its time detailing. The Stoics were not Christians and this Blueprint does not treat them as spiritual authority. But their tools for handling hardship, discipline, and uncertainty are old, tested, and worth borrowing.</p>
+
+    <h4 class="reveal">The Dichotomy of Control</h4>
+    <p class="reveal">Epictetus opens his handbook with the single most useful sentence in all of practical philosophy:</p>
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__verse">“Some things are in our power, and others are not.”</p>
+      <cite class="callout__ref">Epictetus, Enchiridion, Ch. 1</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-dichotomy">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-dichotomy"><div class="callout__reflection-inner"><p>Sit with that before every phase of this plan. You cannot control whether the restaurant succeeds, whether the property sits vacant for a season, whether a bank rejects a loan, whether a chicken flock catches disease. You can control the research before you commit capital, the discipline of your daily hours, the honesty of your numbers, and the character you bring to the work. Pour your whole self into the second list. Hold the first list with an open hand.</p></div></div>
+    </blockquote>
+
+    <h4 class="reveal">On Suffering in Advance</h4>
+    <p class="reveal">Seneca wrote to his friend Lucilius that we suffer far more often in imagination than we ever do in reality — that dread of a hard season usually costs more than the season itself. Marcus Aurelius returns to the same idea throughout his private notebook: that disturbance rarely comes from events themselves, but from the judgments we layer on top of them. Applied plainly — the fear of the working-student schedule, the fear of Saudi, the fear of the restaurant failing, will each cost you more sleep than the actual hardship does. Name the fear, plan against it, then set it down.</p>
+
+    <h4 class="reveal">A Filipino Proverb Worth Keeping</h4>
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__verse" lang="tl">“Ang hindi marunong lumingon sa pinanggalingan ay hindi makararating sa paroroonan.”</p>
+      <p class="callout__translation">“One who does not know how to look back to where he came from will not reach where he is going.”</p>
+      <cite class="callout__ref">A well-known Filipino saying, its exact origin uncertain, its truth undiminished</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-proverb">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-proverb"><div class="callout__reflection-inner"><p>This is Part II of this document, made into a proverb. Never let the Saudi salary or the Phase 6 capital make you forget the boy who went from an average Grade 11 to an honor student in Grade 12 while working mornings. That boy is the actual engine of everything that follows. Not the spreadsheet.</p></div></div>
+    </blockquote>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A1</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Foundations</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">00</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+  </div>
+</section>
+
+<!-- ============ A2 — ORIGINS ============ -->
+<section class="sheet" id="sheet-a2" data-sheet="a2" aria-labelledby="a2-title">
+  <p class="sheet__kicker reveal">Part II — Where This Began</p>
+  <h2 class="sheet__title reveal" id="a2-title">Origins</h2>
+
+  <div class="sheet__content">
+    <p class="reveal">Every blueprint needs a foundation stone. Yours is not a certificate or a certification. It's a single year.</p>
+
+    <h3 class="reveal">Grade 11 to Grade 12</h3>
+    <p class="reveal">In Grade 11, you were an average student. Online games, average grades, watching the honor roll from the outside and wondering if you'd ever belong on it. Nothing dramatic was wrong — you simply hadn't decided yet who you were going to be.</p>
+    <p class="reveal">Then you decided. In Grade 12, carrying a graduating year's full workload, you took a merchandising job from 7 AM to 11 AM, then went straight to class from 12 to 5. You organized your classmates' output — the projects, the presentations, sometimes entire productions — to a standard that made teachers and peers actually applaud. You finished an honor student. <span class="num">ABM average: 94.</span> Accounting and Marketing specifically: <span class="num">98.</span></p>
+    <p class="reveal">That is the real credential underneath every phase of this document. Not the BSIT degree. Not the Saudi Iqama. The proof, already delivered once, that you perform better under real pressure than under comfortable conditions — and that when you decide to change, you actually change.</p>
+
+    <h3 class="reveal">What You Already Know About Yourself</h3>
+    <ul class="prose-list reveal">
+      <li><strong>You learn by building, not by watching.</strong> You said it plainly: you hate passive learning. FreeCodeCamp's blank-canvas projects, AI as an on-demand “why” explainer, and errors you fight through yourself — that is your actual learning engine, and it already works.</li>
+      <li><strong>You are a “dangerous” leader.</strong> Your own word. You carry group projects alone because you trust your own standard more than you trust delegation. This built the Grade 12 outcome. It will also be the exact thing you have to grow past to lead something bigger than yourself — a business, a household, a team that isn't graded on your effort alone.</li>
+      <li><strong>ABM is not a detour from tech — it's the other half of you.</strong> Financial statements, marketing thinking, presentation, and leadership are not soft skills bolted onto a coding career. They are the exact skills that let a technician become an operator.</li>
+      <li><strong>You want honors, honestly, for your parents.</strong> That is not a shallow motive. Just make sure, four years from now, it has grown into something that is also for you — because a four-year fire needs more than one source of fuel to stay lit.</li>
+    </ul>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A2</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Origins</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">00</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+  </div>
+</section>
+
+<!-- ============ A3 — PHASE 1 & 2 ============ -->
+<section class="sheet" id="sheet-a3" data-sheet="a3" aria-labelledby="a3-title">
+  <p class="sheet__kicker reveal">Part III — The Seven Phases</p>
+  <h2 class="sheet__title reveal" id="a3-title">Phase 1 &amp; 2</h2>
+  <p class="reveal">This is the actual architecture. Seven phases, each with a clear what, why, and how — and, where the original plan was wrong, an honest correction. A plan that never gets corrected was never being tested. This one was.</p>
+
+  <div class="sheet__content">
+    <h3 class="reveal">Phase 1 — The Foundation <span class="status-chip status-chip--done">✓ Completed</span></h3>
+    <p class="reveal"><strong>What:</strong> Graduate senior high school with honors from the ABM (Accountancy, Business, and Management) strand.</p>
+    <p class="reveal"><strong>Why:</strong> To build a financial and structural mindset early, so a career is never viewed only as a wage — but as a mechanism for generating capital.</p>
+    <p class="reveal"><strong>The Connection:</strong> This is the root of Phase 6. Most IT specialists fail at business because they only understand technology. You will enter the market already understanding cash flow, asset management, and how a balance sheet actually behaves.</p>
+    <blockquote class="callout callout--note reveal">
+      <p class="callout__note-text">Lesson learned: health and calisthenics were sacrificed to overworking during Grade 12. Correction — physical restoration is now a mandatory, non-negotiable input, not an optional extra.</p>
+    </blockquote>
+
+    <h3 class="reveal">Phase 2 — The Freedom Gap <span class="status-chip">June–July 2026 · Age 18</span></h3>
+    <p class="reveal"><strong>What:</strong> Use the final month before college for daily self-study and routine-building — no formal academic pressure yet, maximum discipline while it's still optional.</p>
+    <blockquote class="callout callout--note reveal">
+      <p class="callout__note-text"><strong>Revision note:</strong> the original version of this phase included a daily Japanese-language block, in service of the original Japan route. Japan was later replaced with Saudi Arabia (see Phase 4). The language block is dropped. Freed hours are folded into coding practice and physical rebuilding instead.</p>
+    </blockquote>
+
+    <h4 class="reveal">How</h4>
+    <ul class="prose-list reveal">
+      <li><strong>Tech prep:</strong> freeCodeCamp Responsive Web Design (HTML/CSS/JS), 2–3 focused hours daily — not to finish the certificate, but to enter college already comfortable building on a blank file, not just a guided one.</li>
+      <li><strong>Health rebuild:</strong> 20–30 minutes of daily calisthenics, and a protected 7-hour sleep floor. This is the direct correction from Phase 1's lesson learned.</li>
+      <li><strong>The blank-canvas discipline:</strong> you already noticed the gap between tutorial-following and from-scratch building — and you're already closing it by rebuilding finished projects from memory before starting new ones. Keep doing exactly this.</li>
+    </ul>
+    <p class="reveal"><strong>Why:</strong> Not to finish a certificate. To overcome inertia, install a daily-practice habit before external deadlines force it, and walk into BSIT already thinking like a builder instead of a beginner.</p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A3</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Phase 1 &amp; 2</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">02</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+    <div class="title-block__progress">
+      <fieldset class="progress-control" data-phase="1">
+        <legend>Phase 1 progress</legend>
+        <div class="progress-control__options">
+          <span class="progress-control__option"><input type="radio" name="phase-1" id="phase-1-not" value="not-started"><label for="phase-1-not">Not Started</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-1" id="phase-1-in" value="in-progress"><label for="phase-1-in">In Progress</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-1" id="phase-1-done" value="completed"><label for="phase-1-done" aria-label="Mark Phase 1 complete">Completed</label></span>
+        </div>
+        <span class="stamp" aria-hidden="true">Approved</span>
+      </fieldset>
+      <fieldset class="progress-control" data-phase="2">
+        <legend>Phase 2 progress</legend>
+        <div class="progress-control__options">
+          <span class="progress-control__option"><input type="radio" name="phase-2" id="phase-2-not" value="not-started"><label for="phase-2-not">Not Started</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-2" id="phase-2-in" value="in-progress"><label for="phase-2-in">In Progress</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-2" id="phase-2-done" value="completed"><label for="phase-2-done" aria-label="Mark Phase 2 complete">Completed</label></span>
+        </div>
+        <span class="stamp" aria-hidden="true">Approved</span>
+      </fieldset>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A4 — PHASE 3 ============ -->
+<section class="sheet" id="sheet-a4" data-sheet="a4" aria-labelledby="a4-title">
+  <p class="sheet__kicker reveal">Part III — The Seven Phases</p>
+  <h2 class="sheet__title reveal" id="a4-title">Phase 3 — The Foundation Build</h2>
+  <p class="sheet__subtitle reveal">College, 2026–2030 · <span class="num">Age 18–22</span></p>
+
+  <div class="sheet__content">
+    <p class="reveal"><strong>What:</strong> Complete the 4-year BSIT degree as the primary asset. Acquire CSS NC II and EIM NC II as secondary, Philippines-based capability credentials — not as a Saudi entry strategy (that idea is corrected in Phase 4).</p>
+
+    <h4 class="reveal">The Hierarchy — Revised</h4>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Asset hierarchy and its role in the Blueprint</caption>
+        <thead><tr><th scope="col">Asset</th><th scope="col">Role in the Blueprint</th></tr></thead>
+        <tbody>
+          <tr><td><strong>BSIT Degree</strong></td><td>The career, the legal Saudi visa category, and the income ceiling.</td></tr>
+          <tr><td><strong>CSS NC II</strong></td><td>Local college freelance income + a lifelong practical home skill.</td></tr>
+          <tr><td><strong>EIM NC II</strong></td><td>Local college freelance income + practical home skill + a real cost-saver across every Phase 6 business.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="reveal">The original blueprint treated BSIT, CSS, and EIM as three equal pillars — “Brains, Body, Heart.” That framing was corrected once the Saudi legal system was properly understood: only one of the three can legally be your entry profession. BSIT leads. The other two are no less valuable — they simply serve a different, still-important purpose now.</p>
+
+    <h4 class="reveal">Add to This Phase</h4>
+    <ul class="prose-list reveal">
+      <li><strong>Certifications:</strong> AWS Cloud Practitioner and CompTIA Security+, self-paced during downtime — these are what differentiate your BSIT degree from every other fresh graduate applying to the same Saudi job posting.</li>
+      <li><strong>Business self-study, in parallel:</strong> learning to actually read a balance sheet, income statement, and cash flow statement using real, public Philippine companies (Jollibee Foods Corp is a natural first practice case — it's literally the industry Phase 6's restaurant will enter).</li>
+      <li><strong>Small automation projects:</strong> the seeds of Phase 7 — simple personal tools built as coding practice that also happen to be useful (a savings tracker, a simple financial-ratio calculator, a small property-monitoring mock-up).</li>
+      <li><strong>Degree attestation research:</strong> start learning the DFA / Saudi Embassy authentication process in your final year, so it is not a bottleneck standing between graduation and departure.</li>
+    </ul>
+
+    <h4 class="reveal">The Working-Student Reality</h4>
+    <p class="reveal">You are planning evening classes (roughly 3–9 PM) alongside a morning merchandising job — a schedule you have already run once, successfully, in Grade 12. The risk is real and worth naming plainly: the pattern of sacrificing one night's sleep before a major deadline, which worked as an occasional tool in SHS, can quietly become a weekly habit once BSIT's technical projects and work hours compound on each other.</p>
+    <ul class="prose-list reveal">
+      <li><strong>Start every project the day it's assigned</strong> — even 20 minutes of planning removes the zero-progress panic that causes all-nighters.</li>
+      <li><strong>Protect weekends as sacred build-time</strong> — heavier project work belongs there, not on top of a work-then-class weekday.</li>
+      <li><strong>Six hours of sleep is the hard floor,</strong> even on the worst days. A tired brain does not learn; it only accumulates the feeling of having studied.</li>
+    </ul>
+
+    <h4 class="reveal">On Leadership and Honors</h4>
+    <p class="reveal">You already know your instinct: carry everything yourself, because you trust your own standard. In college, that instinct needs one adjustment — not concealment, not suppression, just intention. Lead when a project genuinely needs you. Let others grow in the gaps. Being known as capable is not the same as being everyone's default solution.</p>
+    <p class="reveal">On honors specifically: chase consistency, not perfection. Philippine Latin Honors rules typically disqualify a candidate for even a single low grade in any one semester, regardless of how strong the overall average is — which means one rough adjustment period in freshman year can end that particular door for the rest of the course, even if every semester after it is excellent. That is real, and worth taking first year seriously for. But it is a ribbon, not the prize. A 2.50-average graduate who can actually build things beats a Latin-Honors graduate with no real skill in almost every hiring room that matters. Aim for honors. Do not let its absence define whether the four years meant anything.</p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A4</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Phase 3</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">01</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+    <div class="title-block__progress">
+      <fieldset class="progress-control" data-phase="3">
+        <legend>Phase 3 progress</legend>
+        <div class="progress-control__options">
+          <span class="progress-control__option"><input type="radio" name="phase-3" id="phase-3-not" value="not-started"><label for="phase-3-not">Not Started</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-3" id="phase-3-in" value="in-progress"><label for="phase-3-in">In Progress</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-3" id="phase-3-done" value="completed"><label for="phase-3-done" aria-label="Mark Phase 3 complete">Completed</label></span>
+        </div>
+        <span class="stamp" aria-hidden="true">Approved</span>
+      </fieldset>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A5 — PHASE 4 ============ -->
+<section class="sheet" id="sheet-a5" data-sheet="a5" aria-labelledby="a5-title">
+  <p class="sheet__kicker reveal">Part III — The Seven Phases</p>
+  <h2 class="sheet__title reveal" id="a5-title">Phase 4 — The Legal Entry: Saudi Arabia</h2>
+  <p class="sheet__subtitle reveal"><span class="num">Age ≈22, 2030</span></p>
+
+  <div class="sheet__content">
+    <blockquote class="callout callout--revision reveal">
+      <p class="callout__eyebrow">Revision note — read this one carefully</p>
+      <p class="callout__note-text">The original blueprint planned to enter Saudi Arabia on an EIM (electrician) visa, quietly build IT credibility, and later “reveal” the BSIT degree to pivot into a white-collar IT role. That plan was flagged, researched, and corrected.</p>
+      <p class="callout__note-text">Under Saudi labor law, your Iqama (residency card) is tied to a single, specific legal profession, and Saudi Council of Engineers (SCE) registration is required to legally hold an engineering or IT-specialist title. Working outside your Iqama's listed profession is a real violation (“Tastur”) carrying deportation and blacklisting risk — it is not something you can quietly work around by proving competence to a manager. This is exactly Proverbs 21:5 in practice: diligence caught what haste would have missed.</p>
+    </blockquote>
+
+    <p class="reveal"><strong>What:</strong> Enter Saudi Arabia directly as an IT professional — not as a technician hoping to pivot later.</p>
+
+    <h4 class="reveal">How</h4>
+    <ul class="prose-list reveal">
+      <li>Finish the 4-year BSIT degree completely. It is the entry ticket, not a supporting document.</li>
+      <li>Have the degree formally attested — Saudi Embassy in the Philippines / DFA authentication — during the final year of college, before graduation creates time pressure.</li>
+      <li>Use your uncle's position as a supervisor correctly: not “get my nephew in as anything,” but “is there an entry-level IT support or systems role in your company or network my nephew can formally apply to, with his attested degree, before he flies out?”</li>
+      <li>Apply for and enter on an IT Specialist / IT Support visa category from day one — Iqama, contract, and job title all matching, all clean.</li>
+    </ul>
+
+    <h4 class="reveal">Where EIM and CSS Actually Sit Now</h4>
+    <p class="reveal">They are not wasted — they simply move from “entry strategy” to “personal capability layer.” They pay for themselves in the Philippines during college through freelance work (CCTV setup, home wiring, basic networking), they make you a sharper IT professional because you understand the physical infrastructure underneath the software, and they become a direct cost-saver across every Phase 6 business — wiring your own rental units, setting up your own restaurant's POS and camera network, and handling your own farm's basic electrical needs without hiring it out.</p>
+
+    <h4 class="reveal">Why the Tax Picture Is Real</h4>
+    <p class="callout__stub reveal">This section was left as a heading only in the source blueprint — no notes were drafted underneath it yet. Rather than invent tax figures on Clint's behalf, this sheet leaves it open exactly as he left it. <em>Revisit and draft before departure.</em></p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A5</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Phase 4</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">01</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+    <div class="title-block__progress">
+      <fieldset class="progress-control" data-phase="4">
+        <legend>Phase 4 progress</legend>
+        <div class="progress-control__options">
+          <span class="progress-control__option"><input type="radio" name="phase-4" id="phase-4-not" value="not-started"><label for="phase-4-not">Not Started</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-4" id="phase-4-in" value="in-progress"><label for="phase-4-in">In Progress</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-4" id="phase-4-done" value="completed"><label for="phase-4-done" aria-label="Mark Phase 4 complete">Completed</label></span>
+        </div>
+        <span class="stamp" aria-hidden="true">Approved</span>
+      </fieldset>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A6 — PHASE 5 ============ -->
+<section class="sheet" id="sheet-a6" data-sheet="a6" aria-labelledby="a6-title">
+  <p class="sheet__kicker reveal">Part III — The Seven Phases</p>
+  <h2 class="sheet__title reveal" id="a6-title">Phase 5 — The Career Ascent</h2>
+  <p class="sheet__subtitle reveal"><span class="num">Age 22–28</span>, Saudi Arabia</p>
+
+  <div class="sheet__content">
+    <p class="reveal"><strong>What:</strong> Five years of disciplined, legally clean IT work in Saudi Arabia — entry support role, rising through certifications and experience toward cybersecurity or cloud infrastructure specialization.</p>
+    <p class="reveal">The table below is the corrected simulation — entering as an IT professional from day one, not the earlier (and legally risky) EIM-first version. Figures are estimates built from cross-checked 2025–2026 salary data, using <span class="num">SAR 1 = ₱14.50</span>. Real offers will vary with employer, certifications on hand, and how your uncle's referral positions you — treat this as a realistic planning range, not a guarantee.</p>
+
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Corrected five-year salary simulation, direct IT entry</caption>
+        <thead><tr><th scope="col">Year / Age</th><th scope="col">Role</th><th scope="col">Monthly Salary</th><th scope="col">Monthly Savings</th><th scope="col">Running Total</th></tr></thead>
+        <tbody>
+          <tr><td>Y1 · Age 22</td><td>Entry IT Support</td><td>₱94,250</td><td>₱73,225</td><td>₱878,700</td></tr>
+          <tr><td>Y2 · Age 23</td><td>IT Support, proven</td><td>₱116,000</td><td>₱92,800</td><td>₱1,992,300</td></tr>
+          <tr><td>Y3 · Age 24</td><td>Mid-Junior + certs</td><td>₱159,500</td><td>₱133,400</td><td>₱3,593,100</td></tr>
+          <tr><td>Y4 · Age 25</td><td>Solid Mid-Level</td><td>₱217,500</td><td>₱185,600</td><td>₱5,820,300</td></tr>
+          <tr><td>Y5 · Age 26</td><td>Cyber / Cloud Specialist</td><td>₱275,500</td><td>₱239,250</td><td>₱8,691,300</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="chart-block reveal" id="savingsChart">
+      <h4>Five-Year Savings Growth</h4>
+      <p class="chart-block__caption">The gold line is yours to bend — change the numbers below and watch it redraw.</p>
+      <div class="chart">
+        <svg class="chart__svg" id="savingsChartSvg" viewBox="0 0 640 340" role="img" aria-labelledby="chartTitle" aria-describedby="chartDesc">
+          <title id="chartTitle">Projected cumulative savings growth in Saudi Arabia, five-year direct IT entry</title>
+        </svg>
+        <p class="visually-hidden" id="chartDesc">A line chart plotting cumulative peso savings across five years plus bonuses: Year 1 ₱878,700, Year 2 ₱1,992,300, Year 3 ₱3,593,100, Year 4 ₱5,820,300, Year 5 ₱8,691,300, and with bonuses at Age 27–28, ₱10,076,050. A second, adjustable line shows a simplified projection based on the inputs below.</p>
+      </div>
+      <div class="chart-legend">
+        <span class="chart-legend__item chart-legend__item--real">The plan (from the table)</span>
+        <span class="chart-legend__item chart-legend__item--projection">Your projection</span>
+      </div>
+
+      <div class="calc">
+        <h4 class="calc__title">Try Your Own Numbers</h4>
+        <p class="calc__caption">A simplified, flat-rate projection — no promotions or raises factored in, just a straight line so you can play with the numbers yourself.</p>
+        <fieldset class="calc__fields">
+          <legend class="visually-hidden">Savings projection inputs</legend>
+          <div class="calc__field">
+            <label for="calcSalary">Starting monthly salary (₱)</label>
+            <input type="number" id="calcSalary" min="10000" max="500000" step="500" value="94250" inputmode="numeric">
+          </div>
+          <div class="calc__field">
+            <label for="calcRate">Monthly savings rate (%)</label>
+            <input type="number" id="calcRate" min="0" max="100" step="1" value="78" inputmode="numeric">
+          </div>
+          <div class="calc__field">
+            <label for="calcYears">Years</label>
+            <input type="number" id="calcYears" min="1" max="10" step="1" value="5" inputmode="numeric">
+          </div>
+        </fieldset>
+        <p class="calc__result" aria-live="polite">Saving <span class="num" id="calcMonthly">₱73,515</span>/month → projected total after <span class="num" id="calcResultYears">5</span> years: <strong class="num" id="calcResultValue">₱4,410,900</strong></p>
+      </div>
+    </div>
+
+    <h4 class="reveal">Bonuses and Gratuity — Free Money Most OFWs Forget to Plan For</h4>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Five-year total, bonuses and gratuity</caption>
+        <thead><tr><th scope="col">Item</th><th scope="col">Amount (5-year total)</th></tr></thead>
+        <tbody>
+          <tr><td>Annual flight allowance</td><td>₱145,000</td></tr>
+          <tr><td>Bi-annual performance bonuses</td><td>₱551,000</td></tr>
+          <tr><td>End-of-service gratuity (Saudi labor law — ½ month's pay per year, first 5 years)</td><td>₱688,750</td></tr>
+          <tr><td><strong>Total extras</strong></td><td><strong>₱1,384,750</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <blockquote class="callout callout--figure reveal">
+      <p class="callout__note-text">Total in the bank at Age 27–28: <span class="num callout__big-number">₱10,076,050</span></p>
+    </blockquote>
+
+    <p class="reveal">For comparison: the earlier, legally risky EIM-first path projected to roughly <span class="num">₱7,087,600</span> over the same five years — lower savings and real deportation exposure. The corrected direct-IT-entry path is both safer and worth close to ₱3 million more. That is worth remembering the next time a shortcut looks faster on paper than the legal, patient route.</p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A6</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Phase 5</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">01</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+    <div class="title-block__progress">
+      <fieldset class="progress-control" data-phase="5">
+        <legend>Phase 5 progress</legend>
+        <div class="progress-control__options">
+          <span class="progress-control__option"><input type="radio" name="phase-5" id="phase-5-not" value="not-started"><label for="phase-5-not">Not Started</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-5" id="phase-5-in" value="in-progress"><label for="phase-5-in">In Progress</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-5" id="phase-5-done" value="completed"><label for="phase-5-done" aria-label="Mark Phase 5 complete">Completed</label></span>
+        </div>
+        <span class="stamp" aria-hidden="true">Approved</span>
+      </fieldset>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A7 — PHASE 6 ============ -->
+<section class="sheet" id="sheet-a7" data-sheet="a7" aria-labelledby="a7-title">
+  <p class="sheet__kicker reveal">Part III — The Seven Phases</p>
+  <h2 class="sheet__title reveal" id="a7-title">Phase 6 — The Sovereign Legacy</h2>
+  <p class="sheet__subtitle reveal"><span class="num">Age ≈28+</span>, Return to the Philippines</p>
+
+  <div class="sheet__content">
+    <p class="reveal"><strong>What:</strong> Deploy Saudi capital into permanent, generational assets — real estate, a restaurant, and a farm — while retiring the pressure on your parents and building complete personal freedom.</p>
+
+    <h4 class="reveal">Capital Deployment Plan</h4>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Allocation of Phase 5 capital</caption>
+        <thead><tr><th scope="col">Allocation</th><th scope="col">Amount</th></tr></thead>
+        <tbody>
+          <tr><td>Real estate down payment</td><td>₱1,500,000</td></tr>
+          <tr><td>Restaurant startup capital</td><td>₱1,200,000</td></tr>
+          <tr><td>Farm / livestock initial capital</td><td>₱800,000</td></tr>
+          <tr><td>Emergency buffer (never touched)</td><td>₱1,000,000</td></tr>
+          <tr><td>Reserve / opportunity capital</td><td>₱5,576,050</td></tr>
+          <tr><td><strong>Total (from Phase 5)</strong></td><td><strong>₱10,076,050</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="reveal">Building a business is never guaranteed. Below is each venture simulated honestly — best case, realistic case, and worst case — using real Philippine market data, not wishful thinking.</p>
+
+    <h4 class="reveal">Business 1 — Rental Property</h4>
+    <p class="reveal">Setup: a ₱3,000,000 condo in a secondary CBD, ₱1,500,000 down, ₱1,500,000 bank loan at 7% over 15 years (₱13,500/month amortization). Metro Manila rental yields typically range 5–7%, though vacancy in oversupplied segments has recently run as high as ~25%.</p>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Business 1 — Rental Property scenarios</caption>
+        <thead><tr><th scope="col">Scenario</th><th scope="col">Outcome</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Best case</strong></td><td>6.6% yield, roughly breaks even while the loan is being paid, then ₱12,500/month pure passive income once paid off at Year 15, plus an estimated ₱2.4M in property appreciation.</td></tr>
+          <tr><td><strong>Realistic case</strong></td><td>5.4% yield, a modest ~₱3,500/month subsidy while paying down the loan, offset by the same appreciation gain — net positive by Year 15.</td></tr>
+          <tr><td><strong>Worst case</strong></td><td>Wrong location or oversupplied segment: 3.6% yield with real vacancy, ~₱8,000/month loss. Mitigated by buying near confirmed transit/BPO demand, not luxury or oversupplied corridors.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="reveal">Business 2 — The Restaurant</h4>
+    <p class="reveal">Setup: a 25–30-seat casual Filipino restaurant, ₱1,200,000 capital, family-managed with your oversight. Be honest about the data: roughly 60% of new Philippine restaurants close within three years, and 40% within the first two — this is the highest-risk venture in the whole plan.</p>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Business 2 — Restaurant scenarios</caption>
+        <thead><tr><th scope="col">Scenario</th><th scope="col">Outcome</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Best case</strong></td><td>₱320,000/month revenue, ₱115,000/month net profit, breakeven by Month 4–5, ~₱1.38M net in Year 1 alone.</td></tr>
+          <tr><td><strong>Realistic case</strong></td><td>A slow first year (roughly ₱180,000–250,000 net across Year 1 after a difficult opening quarter), stabilizing to ₱400,000–600,000/year net by Year 2. Breakeven on capital by Month 18–24.</td></tr>
+          <tr><td><strong>Worst case</strong></td><td>Wrong location, remote-management problems, or family dynamics strain — sustained monthly losses forcing closure within 18–24 months, the full ₱1.2–1.6M capital lost.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <blockquote class="callout callout--note reveal">
+      <p class="callout__note-text"><strong>The sequencing rule:</strong> do not open this while you are still abroad. This is the venture that most requires your physical presence, and remote-managed restaurants fail even more often than the base rate above. Open this last — after real estate, after the farm, after you are home to personally oversee it.</p>
+    </blockquote>
+
+    <h4 class="reveal">Business 3 — The Farm</h4>
+    <p class="reveal">Setup: native poultry plus small livestock, ₱800,000 capital, managed by in-laws in a peaceful rural area with verified water access, market access, and reasonable distance to veterinary services.</p>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Business 3 — Farm scenarios</caption>
+        <thead><tr><th scope="col">Scenario</th><th scope="col">Outcome</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Best case</strong></td><td>Well-managed poultry + swine cycles, ~₱260,000–280,000/year net (₱21,700–23,300/month) — a stable, unglamorous second income.</td></tr>
+          <tr><td><strong>Realistic case</strong></td><td>Normal disease attrition (10–15% per cycle), ~₱80,000–100,000/year net (₱6,700–8,300/month). This is the plan's stability anchor, not its wealth engine.</td></tr>
+          <tr><td><strong>Worst case</strong></td><td>A real disease outbreak (African Swine Fever remains an active, ongoing risk in the Philippine hog industry) can wipe out ₱150,000–300,000 in a single event. Mitigated by livestock insurance, smaller initial scale, and diversifying into crops alongside livestock.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="reveal">Combined Portfolio — Weighted Scenarios</h4>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Combined portfolio, weighted scenarios</caption>
+        <thead><tr><th scope="col">Scenario</th><th scope="col">Probability</th><th scope="col">Net Monthly</th><th scope="col">What Happens</th></tr></thead>
+        <tbody>
+          <tr><td><strong>A — Everything works</strong></td><td>~20%</td><td>₱130,500</td><td>Phase 6 fully self-sustaining by Age 30–31.</td></tr>
+          <tr><td><strong>B — Realistic mix</strong></td><td>~55%</td><td>₱39,500</td><td>Slower, but building steadily — full operation by Age 33–35. Still well above the national average income.</td></tr>
+          <tr><td><strong>C — Restaurant fails</strong></td><td>~20%</td><td>₱2,500</td><td>Restaurant closed, ~₱1.2–1.6M lost. The untouched ~₱5.58M reserve absorbs it — redirect into a second property or a franchise model instead.</td></tr>
+          <tr><td><strong>D — Everything fails</strong></td><td>~5%</td><td>negative</td><td>Even here: the ₱1M buffer, a ₱3M+ real-estate asset, your degree and certifications, and your Saudi work history all remain. You are not destroyed. You rebuild.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="reveal">Read Scenario D again. This is the honest bottom of the whole Blueprint, and it is not a cliff — it is a floor. Skills do not disappear. Hard assets can be sold, not vaporized. That floor exists because Phases 1 through 5 were never just about money. They were about becoming a person who cannot be fully wiped out.</p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A7</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Phase 6</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">00</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+    <div class="title-block__progress">
+      <fieldset class="progress-control" data-phase="6">
+        <legend>Phase 6 progress</legend>
+        <div class="progress-control__options">
+          <span class="progress-control__option"><input type="radio" name="phase-6" id="phase-6-not" value="not-started"><label for="phase-6-not">Not Started</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-6" id="phase-6-in" value="in-progress"><label for="phase-6-in">In Progress</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-6" id="phase-6-done" value="completed"><label for="phase-6-done" aria-label="Mark Phase 6 complete">Completed</label></span>
+        </div>
+        <span class="stamp" aria-hidden="true">Approved</span>
+      </fieldset>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A8 — PHASE 7 ============ -->
+<section class="sheet" id="sheet-a8" data-sheet="a8" aria-labelledby="a8-title">
+  <p class="sheet__kicker reveal">Part III — The Seven Phases</p>
+  <h2 class="sheet__title reveal" id="a8-title">Phase 7 — The Tech–Business Fusion</h2>
+  <p class="sheet__subtitle reveal">Ongoing, born out of Phase 6</p>
+
+  <div class="sheet__content">
+    <p class="reveal"><strong>What:</strong> Build the tools that run your own Phase 6 businesses — then package and sell them to other operators facing the exact same problems.</p>
+    <p class="reveal">This phase didn't exist in the original blueprint. It emerged directly from a realization worth writing down permanently: a real-estate tracking tool built to monitor your own rental units is simultaneously a personal automation project and, packaged well, a SaaS product for every other small landlord — especially OFW families abroad who cannot personally check on their Philippine properties. The same pattern repeats for restaurant POS and inventory systems, and for farm tracking tools.</p>
+
+    <h4 class="reveal">Why This Works</h4>
+    <ul class="prose-list reveal">
+      <li><strong>Validated before it's sold.</strong> Most tech products fail because the builder is guessing what the market needs. You will not be guessing — you will be solving your own lived problem first, in your own restaurant, your own rental property, your own farm.</li>
+      <li><strong>The identity underneath it.</strong> Not “coder who also likes business,” and not “businessman who happens to know tech.” A tech-literate operator — someone who builds and runs businesses through technology, because he genuinely can, not because he has to hire it out.</li>
+    </ul>
+
+    <h4 class="reveal">The AI-Era Reframe</h4>
+    <p class="reveal">Tools like the one that helped write this very document are closing the gap on execution — the “how to build it” question gets easier every year. That does not make technical fluency worthless; it changes what the scarce skill actually is. The differentiator moving forward is knowing what is worth building and why, understanding a real problem deeply enough to direct a tool well, and having the business judgment to know who will actually pay for the solution. That is ABM thinking wearing a hoodie. You do not need to become an elite programmer. You need to be dangerous enough to build, verify, and direct — and let your business mind decide what's worth aiming at.</p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A8</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Phase 7</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">01</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+    <div class="title-block__progress">
+      <fieldset class="progress-control" data-phase="7">
+        <legend>Phase 7 progress</legend>
+        <div class="progress-control__options">
+          <span class="progress-control__option"><input type="radio" name="phase-7" id="phase-7-not" value="not-started"><label for="phase-7-not">Not Started</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-7" id="phase-7-in" value="in-progress"><label for="phase-7-in">In Progress</label></span>
+          <span class="progress-control__option"><input type="radio" name="phase-7" id="phase-7-done" value="completed"><label for="phase-7-done" aria-label="Mark Phase 7 complete">Completed</label></span>
+        </div>
+        <span class="stamp" aria-hidden="true">Approved</span>
+      </fieldset>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A9 — INVESTING WISDOM ============ -->
+<section class="sheet" id="sheet-a9" data-sheet="a9" aria-labelledby="a9-title">
+  <p class="sheet__kicker reveal">Part IV</p>
+  <h2 class="sheet__title reveal" id="a9-title">Investing Wisdom</h2>
+
+  <div class="sheet__content">
+    <p class="reveal">Somewhere in Phase 3 or Phase 5, watching a chart will start to feel like the fastest way to accelerate all of this. Read this part again whenever that feeling shows up.</p>
+
+    <h3 class="reveal">Trading Is Not Investing</h3>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Trading versus investing</caption>
+        <thead><tr><th scope="col">Trading (avoid)</th><th scope="col">Investing (the actual plan)</th></tr></thead>
+        <tbody>
+          <tr><td>Buying and selling within days, hours, or minutes, trying to predict short-term price movement.</td><td>Buying real ownership in a company or a fund, holding for years, letting the underlying business grow.</td></tr>
+          <tr><td>Reacting to charts and news emotionally, in real time.</td><td>Checking in occasionally to confirm the long-term thesis still holds.</td></tr>
+          <tr><td>The largest known study of retail traders — 8 million traders, 27 years, 295 million trades — found 74–89% lost money, a rate unchanged across three decades regardless of platform or market cycle.</td><td>Those who profit consistently follow one boring playbook: buy on a schedule, hold for years, resist the urge to trade frequently.</td></tr>
+          <tr><td>A 2025 survey of retail crypto traders found 84% lose money in their first year; the two most common causes were poor research (55%) and FOMO-driven entries (44%).</td><td>Index funds — owning a small piece of hundreds of companies at once — remove the need to pick individual winners entirely, betting instead on the economy's long-term growth.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__verse">“But they that will be rich fall into temptation and a snare, and into many foolish and hurtful lusts... For the love of money is the root of all evil.”</p>
+      <cite class="callout__ref">1 Timothy 6:9–10 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-timothy">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-timothy"><div class="callout__reflection-inner"><p>Note the precise wording: a root, and specifically the love of money — not money itself, and not work, and not ambition. The warning is aimed at the get-rich-quick impulse, not at the entire Blueprint you're holding.</p></div></div>
+    </blockquote>
+
+    <h3 class="reveal">Where Your ABM Training Becomes a Real Edge</h3>
+    <p class="reveal">“Everyone can just pick a company they like” — you said this yourself, and you were right to be suspicious of it. That is intuition-based investing, and it is exactly why most amateur investors underperform. The deeper skill is financial-statement literacy: reading revenue trends, debt levels, profit margins, management quality, and competitive position before committing money. You already have the training most people your age don't.</p>
+
+    <h3 class="reveal">How This Maps Directly Onto Phase 6</h3>
+    <p class="reveal">This is not a separate skill from the businesses in Part III — it is the same skill, aimed inward instead of at a stock exchange. Reading a restaurant's foot traffic and competition is revenue-trend analysis. Sizing a mortgage safely is debt-level analysis. Judging whether a family member can actually run the restaurant is management-quality analysis. A stock investor analyzes from the outside and has no control over the outcome. You, in Phase 6, analyze first and then become the decision-maker — the harder and more powerful version of the exact same skill.</p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A9</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Investing Wisdom</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">00</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+  </div>
+</section>
+
+<!-- ============ A10 — RISK SHIELD ============ -->
+<section class="sheet" id="sheet-a10" data-sheet="a10" aria-labelledby="a10-title">
+  <p class="sheet__kicker reveal">Part V</p>
+  <h2 class="sheet__title reveal" id="a10-title">The Risk Management Shield</h2>
+
+  <div class="sheet__content">
+    <p class="reveal">A sovereign architect does not pretend nothing can go wrong. He names every real risk in daylight, in advance, so none of them can ambush him later.</p>
+
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Named risks and mitigations</caption>
+        <thead><tr><th scope="col">Risk</th><th scope="col">Mitigation</th></tr></thead>
+        <tbody>
+          <tr><td>Working-student burnout — the occasional all-nighter becoming a weekly habit.</td><td>Start projects the day they're assigned; protect weekends as build-time; 6-hour sleep floor, no exceptions.</td></tr>
+          <tr><td>Saudi legal / visa risk (Kafala, Iqama-profession mismatch).</td><td>Already corrected in Phase 4 — enter as IT from day one, degree attested before departure, uncle's referral aimed at an actual documented role.</td></tr>
+          <tr><td>Restaurant failure (~60% within 3 years, nationally).</td><td>Open last, only with your physical presence; real estate and farm first; consider a franchise model for its proven systems and lower variance.</td></tr>
+          <tr><td>Farm disease outbreak (ASF, avian flu).</td><td>Livestock insurance where available; diversify into crops alongside livestock; start smaller and scale after one proven cycle.</td></tr>
+          <tr><td>Real-estate vacancy in an oversupplied segment.</td><td>Buy in secondary CBDs near confirmed transit or BPO demand; avoid luxury and oversupplied corridors; research vacancy by barangay, not just by city.</td></tr>
+          <tr><td>The “dangerous leader” pattern — carrying everything alone.</td><td>Lead when genuinely needed; deliberately leave room for others to grow; capable is not the same as indispensable.</td></tr>
+          <tr><td>Honors / perfectionism pressure.</td><td>Aim for consistency across all four years, not a flawless first year; remember the ribbon is not the prize.</td></tr>
+          <tr><td>Family-run business strain — mixing money and relationships.</td><td>A trusted non-family manager for daily operations where possible; personal oversight before scaling; honest conversations about roles before capital changes hands.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__verse">“Go to now, ye that say, To day or to morrow we will go into such a city... whereas ye know not what shall be on the morrow... For that ye ought to say, If the Lord will, we shall live, and do this, or that.”</p>
+      <cite class="callout__ref">James 4:13–15 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-james">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-james"><div class="callout__reflection-inner"><p>This is the humility clause over the entire Blueprint. Every phase, every peso, every year in this document is a plan — not a promise. Hold it firmly enough to work toward it daily, loosely enough that if God's providence rewrites a chapter, you bend instead of break.</p></div></div>
+    </blockquote>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A10</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Risk Shield</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">00</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+  </div>
+</section>
+
+<!-- ============ A11 — THE LETTER ============ -->
+<section class="sheet" id="sheet-a11" data-sheet="a11" aria-labelledby="a11-title">
+  <p class="sheet__kicker reveal">Part VI</p>
+  <h2 class="sheet__title reveal" id="a11-title">A Letter to My Future Self</h2>
+  <p class="reveal">Three letters. Read whichever one matches where you're standing.</p>
+
+  <div class="sheet__content">
+    <h3 class="reveal">To Clint at 22, Holding the Diploma</h3>
+    <p class="reveal">You did it. Four years, a working-student schedule, a degree, two NC IIs, and probably a few nights you don't want to talk about. Before you get on that plane — remember why the entry has to be clean. Not because the electrician money isn't real, but because you already decided, back at 18, that the legal, patient road beats the fast, risky one. Trust the version of you that did that research. Get the degree attested. Let your uncle find you a real title. Walk in the front door.</p>
+
+    <h3 class="reveal">To Clint at 27–28, Stepping Off the Plane</h3>
+    <p class="reveal">You're carrying more than most Filipino families accumulate in a lifetime — and you earned every peso of it working a job in a language and a country that wasn't originally home. Do not rush Phase 6. The 18-year-old who wrote this begged you: research the location before the restaurant lease, test the water before the livestock, buy the real estate before anything else because it's the safest ground to stand on. Slow is not the enemy here. Wrong is. Take the research phase as seriously as you took the five years that funded it.</p>
+
+    <h3 class="reveal">To Clint at 30 and Beyond</h3>
+    <p class="reveal">If you're reading this with a piano in the room and land somewhere quiet, some version of the picture you were dreaming about at 18 came true. Whatever mix of real estate, restaurant, farm, and the tools you built on top of them actually worked out — remember that the point was never only the money. It was your parents never carrying a debt they couldn't manage. It was being the kind of provider whose family never has to wonder if he's coming through. It was standing in front of God able to say the talents entrusted to you were not buried out of fear.</p>
+
+    <blockquote class="callout reveal" data-callout>
+      <p class="callout__verse">“Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.”</p>
+      <cite class="callout__ref">Matthew 25:21 (KJV)</cite>
+      <button class="callout__toggle" type="button" aria-expanded="false" aria-controls="reflect-matthew">Read the reflection</button>
+      <div class="callout__reflection" id="reflect-matthew"><div class="callout__reflection-inner"><p>The parable of the talents is not primarily a financial-growth formula — it's about faithfulness before God with whatever He entrusts, on His terms and His timing. Read that way, it fits this Blueprint better than any purely financial reading could.</p></div></div>
+    </blockquote>
+
+    <h3 class="reveal">The Closing Charge</h3>
+    <p class="reveal">Whichever age you are when you read this — you already have everything Phase 1 through this moment required. Diligence over haste. Research before capital. Legal before fast. Family before pride. Faith underneath all of it, not decorating the top of it.</p>
+
+    <blockquote class="callout callout--epigraph reveal">
+      <p class="callout__verse">“Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.”</p>
+      <cite class="callout__ref">Proverbs 3:5–6 (KJV)</cite>
+    </blockquote>
+
+    <p class="closing-line reveal"><em>Build the tower. Count the cost, like you already did. And when it's standing — remember whose hands were on it with you the whole time.</em></p>
+    <p class="closing-signature reveal">— Clint, Age 18, one month before it all began.</p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A11</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">The Letter</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">00</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+  </div>
+</section>
+
+<!-- ============ A12 — APPENDIX ============ -->
+<section class="sheet" id="sheet-a12" data-sheet="a12" aria-labelledby="a12-title">
+  <p class="sheet__kicker reveal">Appendix</p>
+  <h2 class="sheet__title reveal" id="a12-title">Quick Reference</h2>
+
+  <div class="sheet__content">
+    <h3 class="reveal">SHS-to-College Grade Conversion (Typical Philippine SUC Scale)</h3>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Grade conversion scale</caption>
+        <thead><tr><th scope="col">College Grade</th><th scope="col">Percentage</th><th scope="col">Descriptor</th></tr></thead>
+        <tbody>
+          <tr><td>1.00</td><td>97–100</td><td>Excellent</td></tr>
+          <tr><td>1.25</td><td>94–96</td><td>Your SHS average lands here</td></tr>
+          <tr><td>1.50</td><td>91–93</td><td>—</td></tr>
+          <tr><td>1.75</td><td>88–90</td><td>—</td></tr>
+          <tr><td>2.00</td><td>85–87</td><td>—</td></tr>
+          <tr><td>3.00</td><td>75</td><td>Minimum passing</td></tr>
+          <tr><td>5.00</td><td>below 75</td><td>Failed</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="reveal">Latin Honors Cutoffs (typical, verify against your specific university's handbook)</h3>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Latin honors cutoffs</caption>
+        <thead><tr><th scope="col">Honor</th><th scope="col">GWA Range</th><th scope="col">Note</th></tr></thead>
+        <tbody>
+          <tr><td>Summa Cum Laude</td><td>1.00–1.20</td><td>Extremely rare</td></tr>
+          <tr><td>Magna Cum Laude</td><td>1.21–1.45</td><td>—</td></tr>
+          <tr><td>Cum Laude</td><td>1.46–1.75</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="reveal">Phase Timeline at a Glance</h3>
+    <div class="table-wrap reveal">
+      <table>
+        <caption>Seven phases at a glance</caption>
+        <thead><tr><th scope="col">Phase</th><th scope="col">Years</th><th scope="col">Age</th></tr></thead>
+        <tbody>
+          <tr><td>1 — The Foundation</td><td>Completed</td><td>—</td></tr>
+          <tr><td>2 — The Freedom Gap</td><td>Jun–Jul 2026</td><td>18</td></tr>
+          <tr><td>3 — The Foundation Build</td><td>2026–2030</td><td>18–22</td></tr>
+          <tr><td>4 — The Legal Entry</td><td>2030</td><td>22</td></tr>
+          <tr><td>5 — The Career Ascent</td><td>2030–2035</td><td>22–27/28</td></tr>
+          <tr><td>6 — The Sovereign Legacy</td><td>2035 onward</td><td>27/28+</td></tr>
+          <tr><td>7 — Tech–Business Fusion</td><td>Ongoing, born from Phase 6</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="closing-line reveal"><em>This document was built from a real conversation, corrected where it needed correcting, and grounded in what actually matters. Update it as life happens — a blueprint that never changes was never actually being used.</em></p>
+    <p class="closing-signature reveal">Clint's Blueprint —</p>
+  </div>
+
+  <div class="title-block">
+    <div class="title-block__cell"><span class="title-block__label">Sheet</span><span class="title-block__value">A12</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Title</span><span class="title-block__value">Appendix</span></div>
+    <div class="title-block__cell"><span class="title-block__label">Rev</span><span class="title-block__value">00</span></div>
+    <div class="title-block__cell title-block__cell--drawn"><span class="title-block__label">Drawn by</span><span class="title-block__value">Clint's Blueprint</span></div>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
