@@ -1,0 +1,8 @@
+{
+  "name": "The Sovereign Architect",
+  "description": "A personal life blueprint spanning seven phases, updated with the TESDA stack, remote work pipeline, and Project 11A mini data center architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "sovereign-architect",
+  "version": "1.0.0",
+  "description": "A personal life blueprint spanning seven phases, from Age 18 through the Sovereign Legacy — grounded in Scripture and Stoic philosophy.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "lint": "node --check server.js script.js",
+    "build": "node -e \"console.log('Build completed')\""
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

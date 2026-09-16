@@ -215,7 +215,8 @@
     "4": "not-started",
     "5": "not-started",
     "6": "not-started",
-    "7": "not-started"
+    "7": "not-started",
+    "11a": "not-started"
   };
 
   function loadProgress() {
